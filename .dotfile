@@ -1,3 +1,5 @@
 # Serves as the main dotfiles loader
 
-source ./.exports
+export SERVER_HOME="/server"
+
+source ${SERVER_HOME}/dotfiles/.exports

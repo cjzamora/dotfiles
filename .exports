@@ -10,17 +10,20 @@
 # JAVA HOME
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home"
 
+# Export AVD's
+export PATH="${PATH}:~/.android/avd"
+
 # Export Android
-#export PATH="${PATH}:$ANDROID_PLATFORM_TOOLS"
+export PATH="${PATH}:$ANDROID_PLATFORM_TOOLS"
 
 # Export Brew sbin
-#export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 # Export NVM
-#export PATH="${PATH}:/usr/local/opt/nvm"
+export PATH="${PATH}:/usr/local/opt/nvm"
 
 # Source NVM
-#source /usr/local/opt/nvm/nvm.sh
+(source /usr/local/opt/nvm/nvm.sh > /dev/null &)
 
 # Export PHP56
 export PATH="${PATH}:/usr/local/opt/php56/bin"

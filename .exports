@@ -1,0 +1,38 @@
+# Android SDK
+#export ANDROID_HOME="/usr/local/Cellar/android-sdk/24.4.1_1"
+
+# Android NDK
+#export ANDROID_NDK_HOME="/opt/android-ndk"
+
+# Android Platform Tools
+#export ANDROID_PLATFORM_TOOLS="/usr/local/Cellar/android-sdk/24.4.1_1/platform-tools"
+
+# JAVA HOME
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home"
+
+# Export Android
+#export PATH="${PATH}:$ANDROID_PLATFORM_TOOLS"
+
+# Export Brew sbin
+#export PATH="/usr/local/sbin:$PATH"
+
+# Export NVM
+#export PATH="${PATH}:/usr/local/opt/nvm"
+
+# Source NVM
+#source /usr/local/opt/nvm/nvm.sh
+
+# Export PHP56
+export PATH="${PATH}:/usr/local/opt/php56/bin"
+
+# Export MYSQL
+export PATH="${PATH}:/usr/local/mysql/bin"
+
+# Export ANDROID-NDK
+export PATH="${PATH}:/opt/android-ndk"
+
+# Export JAVA HOME
+export PATH="${PATH}:$JAVA_HOME"
+
+# Iterm Shell Integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

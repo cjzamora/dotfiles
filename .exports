@@ -1,11 +1,11 @@
 # Android SDK
-#export ANDROID_HOME="/usr/local/Cellar/android-sdk/24.4.1_1"
+export ANDROID_HOME="/usr/local/Cellar/android-sdk/24.4.1_1"
 
 # Android NDK
-#export ANDROID_NDK_HOME="/opt/android-ndk"
+export ANDROID_NDK_HOME="/opt/android-ndk"
 
 # Android Platform Tools
-#export ANDROID_PLATFORM_TOOLS="/usr/local/Cellar/android-sdk/24.4.1_1/platform-tools"
+export ANDROID_PLATFORM_TOOLS="/usr/local/Cellar/android-sdk/24.4.1_1/platform-tools"
 
 # JAVA HOME
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home"
@@ -21,6 +21,9 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Export NVM
 export PATH="${PATH}:/usr/local/opt/nvm"
+
+# Export NVM Node Modules
+export PATH="${PATH}:/usr/local/opt/nvm/versions/node/v6.0.0/bin"
 
 # Source NVM
 (source /usr/local/opt/nvm/nvm.sh > /dev/null &)

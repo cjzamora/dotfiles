@@ -1,44 +1,17 @@
-# Android SDK
-export ANDROID_HOME="/usr/local/Cellar/android-sdk/24.4.1_1"
+# Java Home
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home"
 
-# Android NDK
-export ANDROID_NDK_HOME="/opt/android-ndk"
+# NVM Home
+export NVM_DIR="$HOME/.nvm"
 
-# Android Platform Tools
-export ANDROID_PLATFORM_TOOLS="/usr/local/Cellar/android-sdk/24.4.1_1/platform-tools"
+# Tesseract
+export TESSDATA_PREFIX="/usr/local/Cellar/tesseract/3.05.01/share/tessdata"
 
-# JAVA HOME
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home"
-
-# Export AVD's
-export PATH="${PATH}:~/.android/avd"
-
-# Export Android
-export PATH="${PATH}:$ANDROID_PLATFORM_TOOLS"
-
-# Export Brew sbin
-export PATH="/usr/local/sbin:$PATH"
-
-# Export NVM
-export PATH="${PATH}:/usr/local/opt/nvm"
-
-# Export NVM Node Modules
-export PATH="${PATH}:/usr/local/opt/nvm/versions/node/v6.0.0/bin"
-
-# Source NVM
-(source /usr/local/opt/nvm/nvm.sh > /dev/null &)
-
-# Export PHP56
-export PATH="${PATH}:/usr/local/opt/php56/bin"
-
-# Export MYSQL
+# MySQL
 export PATH="${PATH}:/usr/local/mysql/bin"
 
-# Export ANDROID-NDK
-export PATH="${PATH}:/opt/android-ndk"
+# NVM Bin
+export PATH="${PATH}:/usr/local/opt/nvm"
 
-# Export JAVA HOME
-export PATH="${PATH}:$JAVA_HOME"
-
-# Iterm Shell Integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# Brew sbin
+export PATH="${PATH}:/usr/local/sbin"

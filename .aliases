@@ -4,5 +4,5 @@ alias srcenv="source ${WORKSPACE_HOME}/dotfiles/.env"
 # node alias
 alias node='unalias node ; unalias npm ; nvm use default ; node $@'
 
-#npm alias
+# npm alias
 alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'

@@ -1,3 +1,10 @@
+" Pathogen {{{
+
+" use pathogen
+call pathogen#infect()
+
+" }}}
+
 " Colors {{{
 
 " set fold color
@@ -77,6 +84,9 @@ set foldenable
 " load filetype-specific indent files
 filetype indent on
 
+" load plugin filetype-specific indent files
+filetype plugin indent on
+
 " }}}
 
 " Shortcuts {{{
@@ -103,6 +113,9 @@ nnoremap <leader>ez :vsp ~/.zshrc<CR>
 " source vimrc
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
+" toggle nerdtree
+nnoremap <leader>f :NERDTreeToggle<CR>
+
 " }}}
 
 " Backups {{{
@@ -121,6 +134,43 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " write backup
 set writebackup
+
+" }}}
+
+" NERDTree {{{
+
+" minimal ui
+let NERDTreeMinimalUI = 1
+
+" directory arrows
+let NERDTreeDirArrows = 1
+
+" remove deleted files from buffer
+let NERDTreeAutoDeleteBuffer = 1
+
+" allow mouse click
+let g:NERDTreeMouseMode = 3
+
+" open on startup
+" autocmd vimenter * NERDTree
+
+" open on startup, even if file is not specified
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" open automatically when directory is specificed
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" close vim if nerdtree is the only remaining 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"}}}
+
+" Airline {{{
+
+" enable tabline
+let g:airline#extensions#tabline#enabled = 1
 
 " }}}
 

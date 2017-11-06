@@ -1,2 +1,8 @@
 # source .env
 alias senv="source ${WORKSPACE_HOME}/dotfiles/.env"
+
+# default node alias
+alias node='unalias node ; unalias npm ; nvm use default ; node $@'
+
+# default npm alias
+alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
